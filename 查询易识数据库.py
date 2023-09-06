@@ -17,7 +17,7 @@ from sqlalchemy import Column, String, Integer, DateTime, Text, Boolean, BigInte
 from sqlalchemy.dialects.postgresql import JSONB
 
 # 注意：由于该模块跑在docker容器里，这里的数据库host，需要用到宿主机的ip
-engine = create_engine(f'postgresql://postgres:123456@192.168.1.208:25432/ys_yishi')
+engine = create_engine(f'postgresql://postgres:123456@192.168.5.242:25432/ys_yishi')
 Base = declarative_base()
 Session = sessionmaker(bind=engine)
 
@@ -327,6 +327,7 @@ class ScanResult(Base):
     # 固件漏洞文件对应的漏洞信息{'file_name1': {'file_path': None, 'cwe_name': ['cwe123', 'cwe456']},}
     cwe_count = Column(Text, default=json.dumps({}), comment="cwe扫描结果数量统计")  # cwe扫描结果数量统计
     cve_count = Column(Text, default=json.dumps({}), comment="cve扫描结果数量统计")  # cve扫描结果数量统计
+    is_delete = Column(Boolean,  comment="")  # cve扫描结果数量统计
 
     # task = relationship("FirmWareScanTask", backref="task_result")
 
@@ -501,8 +502,12 @@ cwe_789 = {
 
 
 #query后接查询表的名字     filter后面接查询表的字段
-result_query = session.query(CVECNInfo).filter(CVECNInfo.cve_id== 'CVE-2011-4969').first()
-print(result_query.dict)
+query_list = session.query(ScanResult).filter(ScanResult.is_delete==False).all()
+for query in query_list:
+    plugin_data = json.loads(query.plugin)
+    if "cpu_architecture" in plugin_data:
+        if "ARM, 64-bit, little endian (M)" in plugin_data["cpu_architecture"]["summary"]:
+            print(query.id)
 
 
 # result_query.cn_name = aes_crypto.crypoto(cwe_789['cn_name'])
