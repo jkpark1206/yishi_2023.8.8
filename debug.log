@@ -1,0 +1,35 @@
+2023-03-09T20:56:04.925247+0800 INFO This is a info beautiful msg
+2023-03-09T20:58:11.229430+0800 INFO This is a info beautiful msg
+2023-03-09T21:03:14.837958+0800 INFO This is a info beautiful msg
+2023-03-09T21:03:14.838457+0800 ERROR An error has been caught in function '<module>', process 'MainProcess' (1948), thread 'MainThread' (19388):
+Traceback (most recent call last):
+
+> File "C:\Tools\yishi_api_2\handle_log.py", line 41, in <module>
+    res = main(1,2,0)
+          └ <function main at 0x000002A0DC0C7280>
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 39, in main
+    return x * y / z
+           │   │   └ 0
+           │   └ 2
+           └ 1
+
+ZeroDivisionError: division by zero
+2023-03-09T21:03:14.838457+0800 ERROR division by zero
+Traceback (most recent call last):
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 58, in <module>
+    nested(0)
+    └ <function nested at 0x000002A0DC0C7670>
+
+> File "C:\Tools\yishi_api_2\handle_log.py", line 54, in nested
+    func(5, c)
+    │       └ 0
+    └ <function func at 0x000002A0DC0C78B0>
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 50, in func
+    return a / b
+           │   └ 0
+           └ 5
+
+ZeroDivisionError: division by zero

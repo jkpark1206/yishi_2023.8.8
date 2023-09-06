@@ -1,0 +1,162 @@
+2023-03-09 19:58:55.111 | ERROR    | __main__:nested:57 - What?!
+Traceback (most recent call last):
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 59, in <module>
+    nested(0)
+    └ <function nested at 0x0000023491126DC0>
+
+> File "C:\Tools\yishi_api_2\handle_log.py", line 55, in nested
+    func(5, c)
+    │       └ 0
+    └ <function func at 0x0000023491120670>
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 51, in func
+    return a / b
+           │   └ 0
+           └ 5
+
+ZeroDivisionError: division by zero
+2023-03-09 20:00:54.305 | ERROR    | __main__:nested:57 - division by zero
+Traceback (most recent call last):
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 59, in <module>
+    nested(0)
+    └ <function nested at 0x000001B26D0E6DC0>
+
+> File "C:\Tools\yishi_api_2\handle_log.py", line 55, in nested
+    func(5, c)
+    │       └ 0
+    └ <function func at 0x000001B26D0E0670>
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 51, in func
+    return a / b
+           │   └ 0
+           └ 5
+
+ZeroDivisionError: division by zero
+2023-03-09 20:33:39.323 | ERROR    | __main__:nested:57 - division by zero
+Traceback (most recent call last):
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 59, in <module>
+    nested(0)
+    └ <function nested at 0x000001AF37788310>
+
+> File "C:\Tools\yishi_api_2\handle_log.py", line 55, in nested
+    func(5, c)
+    │       └ 0
+    └ <function func at 0x000001AF37780AF0>
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 51, in func
+    return a / b
+           │   └ 0
+           └ 5
+
+ZeroDivisionError: division by zero
+2023-03-09 20:34:00.201 | ERROR    | __main__:nested:57 - division by zero
+Traceback (most recent call last):
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 59, in <module>
+    nested(0)
+    └ <function nested at 0x00000297BCDC8310>
+
+> File "C:\Tools\yishi_api_2\handle_log.py", line 55, in nested
+    func(5, c)
+    │       └ 0
+    └ <function func at 0x00000297BCDC0AF0>
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 51, in func
+    return a / b
+           │   └ 0
+           └ 5
+
+ZeroDivisionError: division by zero
+2023-03-09 20:39:22.608 | ERROR    | __main__:nested:57 - division by zero
+Traceback (most recent call last):
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 59, in <module>
+    nested(0)
+    └ <function nested at 0x000001BA1AF683A0>
+
+> File "C:\Tools\yishi_api_2\handle_log.py", line 55, in nested
+    func(5, c)
+    │       └ 0
+    └ <function func at 0x000001BA1AF60B80>
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 51, in func
+    return a / b
+           │   └ 0
+           └ 5
+
+ZeroDivisionError: division by zero
+2023-03-09 20:40:18.365 | ERROR    | __main__:nested:59 - division by zero
+Traceback (most recent call last):
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 61, in <module>
+    nested(0)
+    └ <function nested at 0x00000232193EA430>
+
+> File "C:\Tools\yishi_api_2\handle_log.py", line 57, in nested
+    func(5, c)
+    │       └ 0
+    └ <function func at 0x00000232193E1C10>
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 53, in func
+    return a / b
+           │   └ 0
+           └ 5
+
+ZeroDivisionError: division by zero
+2023-03-09 20:40:56.020 | ERROR    | __main__:nested:56 - division by zero
+Traceback (most recent call last):
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 58, in <module>
+    nested(0)
+    └ <function nested at 0x000001A9B6776310>
+
+> File "C:\Tools\yishi_api_2\handle_log.py", line 54, in nested
+    func(5, c)
+    │       └ 0
+    └ <function func at 0x000001A9B67763A0>
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 50, in func
+    return a / b
+           │   └ 0
+           └ 5
+
+ZeroDivisionError: division by zero
+2023-03-09 20:49:09.884 | ERROR    | __main__:nested:56 - division by zero
+Traceback (most recent call last):
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 58, in <module>
+    nested(0)
+    └ <function nested at 0x000001A68B8D6310>
+
+> File "C:\Tools\yishi_api_2\handle_log.py", line 54, in nested
+    func(5, c)
+    │       └ 0
+    └ <function func at 0x000001A68B8D63A0>
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 50, in func
+    return a / b
+           │   └ 0
+           └ 5
+
+ZeroDivisionError: division by zero
+2023-03-09 20:50:48.085 | ERROR    | __main__:nested:56 - division by zero
+Traceback (most recent call last):
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 58, in <module>
+    nested(0)
+    └ <function nested at 0x00000196B42E4310>
+
+> File "C:\Tools\yishi_api_2\handle_log.py", line 54, in nested
+    func(5, c)
+    │       └ 0
+    └ <function func at 0x00000196B42AEAF0>
+
+  File "C:\Tools\yishi_api_2\handle_log.py", line 50, in func
+    return a / b
+           │   └ 0
+           └ 5
+
+ZeroDivisionError: division by zero
